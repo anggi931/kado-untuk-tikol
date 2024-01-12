@@ -1,0 +1,99 @@
+.kumpulanstiker {
+    width: 100%;
+}
+
+.kumpulanstiker img {
+    display: none;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    /* margin: 20px 0; */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    /* left: 40%; */
+    transform: translate(-50%, -50%);
+    animation: stiker 1s ease-out;
+  }
+
+.hai {
+    display: none;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Dancing Script";
+
+}
+
+.container-pesan {
+    width: 100%;
+    display: none;
+  }
+  .box-pesan {
+    border: 2px solid #fff; /* Garis batas kotak */
+    border-radius: 10px; /* Border yang dibulatkan */
+    padding: 0 10px; /* Ruang di dalam kotak */
+    width: 75%; 
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    
+  }
+
+  .box-pesan p {
+    font-size: 12pt;
+    font-family: "Dancing Script";;
+  }
+
+
+  @keyframes stiker {
+    from{
+        opacity: 0;
+       
+    }
+    to {
+        opacity: 1;
+        
+    }
+    
+  }
+
+ .clast {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+  .clast p {
+    font-family: "Dancing Script";
+    font-weight: bold;
+    text-align: center;
+    animation :  tksend 2s infinite; 
+    color: #fff;
+  }
+  
+  @keyframes tksend {
+    0%{
+        opacity: 0.5;
+        scale: 0.5;
+       
+    }
+    50% {
+        opacity: 1;
+        scale: 1;
+    }
+    100%{
+        opacity: 0.5;
+        scale: 0.5;
+    }
+}
+
+  

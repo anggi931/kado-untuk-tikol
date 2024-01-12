@@ -1,0 +1,306 @@
+
+canvas{display:block}
+.happy-birthday {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  color: #fff;
+ 
+  -webkit-user-select: none;
+  user-select: none;
+  display: none;
+}
+.happy-birthday h1 {
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 22pt;
+  font-weight: 200;
+}
+@keyframes slideTitle {
+  50% {
+		top: 15%;
+	}
+  100% {
+		top: 10%;
+  }
+}
+
+.container-tb {
+  width: 100%;
+  height: 100%;
+}
+.text-box {
+  border: 2px solid #fff; /* Garis batas kotak */
+  border-radius: 10px; /* Border yang dibulatkan */
+  padding: 5px 10px; /* Ruang di dalam kotak */
+  /* width: 60%;  */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  display: none;
+  margin-top: 5%;
+  animation: slideIn 2s ease-out 4s forwards; 
+  opacity: 0;
+}
+
+.text-box p {
+  font-size: 8pt; /* Ukuran font p */
+  /* text-align: justify; */
+}
+
+
+
+@keyframes slideIn {
+	20% {
+		opacity: 0;
+    transform: translate(120%, -50%);
+	}
+	60% {
+    transform: translate(-45%, -50%);
+	}
+	75% {
+		transform: translate(-52%, -50%);
+	}
+	100% {
+		opacity: 1;
+    transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes slideOut {
+	20% {
+		opacity: 1;
+    transform: translate(-45%, -50%);
+	}
+	40% {
+    transform: translate(-50%, -50%);
+	}
+	100% {
+		opacity: 0;
+    transform: translate(-120%, -50%);
+	}
+}
+
+
+.btn2 {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0.6em;
+  color: #fff;
+  display: flex;
+  font-size: 10pt;
+  line-height: 1;
+  font-weight: bold;
+  margin-top: 15%;
+  padding: 8px 8px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  animation: slideIn-btn 2s ease-out 4s forwards; 
+  opacity: 0;
+}
+
+@keyframes slideIn-btn {
+	0% {
+		opacity: 0;
+    transform: translate(-50%, 50%);
+	}
+	50% {
+    transform: translate(-50%, 0%);
+    opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+    transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes slideOut-btn {
+  0% {
+		opacity: 1;
+    transform: translate(-50%, -50%);
+	}
+	50% {
+    transform: translate(-50%, 0%);
+    opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+    transform: translate(-50%, 50%);
+	}
+}
+
+
+.container-pict {
+  position: absolute;
+  width: 100%;
+  top: 19%;
+}
+
+.container-pict h1 {
+  display: none;
+  position: absolute;
+  width: 45%; 
+  transform: translateY(-40%);
+  left: 25%;
+  font-size: 60pt;
+  color: transparent;
+  font-weight: bold;
+  -webkit-text-stroke: 2px #fff;
+  animation: textblink 2.5s infinite;;
+  text-shadow: 0 0 10px wheat;
+}
+
+@keyframes textblink {
+  30% {
+    text-shadow: 0 0 10px white;
+  }
+  50% {
+    text-shadow: 0 0 10px wheat;
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(236, 227, 124);
+  }
+}
+
+.container-pict img {
+  display: none;
+  position: absolute;
+  right: 10%;
+  max-width: 30%; 
+  border-radius: 10px;
+  border: 2px solid #fff;
+  animation: img1 2s ease-out; 
+}
+
+@keyframes img1 {
+  0% {
+    right: -50%;
+  }
+  80% {
+    right: 15%;
+  }
+  100% {
+    right: 10%;
+  }
+}
+
+.container-pict2 {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+  display: none;
+}
+.container-pict2 img {
+  position: relative;
+  max-width: 25%; 
+  border-radius: 10px;
+  display: inline;
+  border: 2px solid #fff;
+  animation: img2 2s ease-out; 
+}
+
+
+@keyframes img2 {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+
+.container-pict3 {
+  position: absolute;
+  width: 100%;
+  top: 57%;
+}
+
+.p4 {
+  display: none;
+  position: absolute;
+  left: 10%;
+  max-width: 38%; 
+  border-radius: 10px;
+  border: 2px solid #fff;
+  animation: img3 3s  ease-out; 
+}
+.p5 {
+  display: none;
+  position: absolute;
+  right: 10%;
+  max-width: 38%; 
+  border-radius: 10px;
+  border: 2px solid #fff;
+  animation: img4 3s  ease-out; 
+}
+
+@keyframes img3 {
+  from {
+    left: -40%;
+  }
+  to{
+    left: 10;
+  }
+}
+@keyframes img4 {
+  from {
+    right: -40%;
+  }
+  to{
+    right: 10%;
+  }
+}
+
+.btn3 {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0.6em;
+  color: #fff;
+  display: flex;
+  font-size: 10pt;
+  line-height: 1;
+  font-weight: bold;
+  margin-top: 15%;
+  padding: 8px 8px;
+  text-align: center;
+  position: absolute;
+    left: 50%;
+  transform: translate(-50%, -150%);
+  display: none;
+  animation: slideIn-btn2 1.5s infinite ; 
+}
+
+@keyframes slideIn-btn2 {
+	0% {
+    transform: translate(-50%, -150%);
+	}
+	50% {
+    transform: translate(-50%, -125%);
+	}
+	100% {
+    transform: translate(-50%, -150%);
+	}
+}
+
+
+@keyframes hilang {
+  from{
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+  
+}

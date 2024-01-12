@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+        name='viewport' />
+    <meta content='IE=edge' http-equiv='X-UA-Compatible' />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/countdown2.css">
+
+    <link rel="stylesheet" href="styles/kado.css">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+    <h1 class="ditunggu" id="ditunggu">Ditunggu Yaa..</h1>
+    <div class="container" id="countdown2" style="margin-top: 10%;">
+        <div class="container-segment">
+            <div class="segment-title">D</div>
+            <div class="segment">
+                <div class="flip-card" data-days-tens>
+                    <div class="top">0</div>
+                    <div class="bottom">0</div>
+                </div>
+                <div class="flip-card" data-days-ones>
+                    <div class="top">0</div>
+                    <div class="bottom">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-segment">
+            <div class="segment-title">H</div>
+            <div class="segment">
+                <div class="flip-card" data-hours-tens>
+                    <div class="top">0</div>
+                    <div class="bottom">0</div>
+                </div>
+                <div class="flip-card" data-hours-ones>
+                    <div class="top">0</div>
+                    <div class="bottom">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-segment">
+            <div class="segment-title">M</div>
+            <div class="segment">
+                <div class="flip-card" data-minutes-tens>
+                    <div class="top">0</div>
+                    <div class="bottom">0</div>
+                </div>
+                <div class="flip-card" data-minutes-ones>
+                    <div class="top">0</div>
+                    <div class="bottom">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-segment">
+            <div class="segment-title">S</div>
+            <div class="segment">
+                <div class="flip-card" data-seconds-tens>
+                    <div class="top">0</div>
+                    <div class="bottom">0</div>
+                </div>
+                <div class="flip-card" data-seconds-ones>
+                    <div class="top">0</div>
+                    <div class="bottom">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn" id="siapcountdown" onclick="siapcountdown()">Click Me
+            &hearts;</button>
+    </div>
+
+    <div class="happy-birthday" id="happyText">
+        <h1>Happy Birthday <br> Tikol </h1>
+    </div>
+    <div class="container-tb">
+        <div class="text-box" id="textbox">
+            <p>"Happy Birthday seng! May this year bring you closer to your dreams. Not just for today, but I wish for a
+                lifetime filled with health, love, success, and all the things that truly make you happy!".</p>
+        </div>
+    </div>
+    <div class="container-tb">
+        <button class="btn2" id="OurStory" onclick="btnStory()">Next
+            &hearts;</button>
+    </div>
+
+    <div class="container-pict" id="container-pict">
+        <img src="pict/2.jpg" id="pc1">
+        <h1 id="thn23">23</h1>
+    </div>
+
+    <div class="container-pict2" id="container-pict2">
+        <img src="pict/4.jpg">
+        <img src="pict/6.jpg">
+        <img src="pict/8.jpg">
+    </div>
+
+    <div class="container-pict3" id="container-pict3">
+        <img src="pict/5.jpg" class="p4" id="p4">
+        <img src="pict/9.jpg" class="p5" id="p5">
+    </div>
+
+    <!-- <div class="container-tb"> -->
+    <button class="btn3" style="top: 80%;" id="btnKado" onclick="kado()">Next
+        &hearts;</button>
+
+    <div class="kumpulanstiker">
+        <!-- Stiker untuk Konten -->
+        <img src="gif/selamat.gif" id="fotostiker">
+        <img src="gif/mandi.gif" id="fotostiker2">
+        <img src="gif/ber2.gif" id="fotostiker3">
+        <img src="gif/sayang.gif" id="fotostiker4">
+        <img src="gif/bawalove.gif" id="fotostiker5">
+        <img src="gif/ending.gif" id="fotostiker6">
+    </div>
+
+    <p class="hai" id="hai">Hai seng !!</p>
+
+    <div class="container-pesan" id="cpsn">
+        <div class="box-pesan" id="pesan">
+            <p>
+                <span class="ityped" style="font-size: 12pt;"></span>
+            </p>
+        </div>
+    </div>
+
+    <div class="clast" id="clast">
+        <p id="kalimatbawah">I Love You ❤️</p>
+    </div>
+
+    <audio id="myAudio" controls style="display: none;">
+        <source src="sound.mp3" type="audio/mp3">
+    </audio>
+
+    <canvas id="birthday"></canvas>
+    <script src="script/afterCountdown.js"></script>
+    <script src="script/kado.js"></script>
+    <script src="script/countdown.js"></script>
+
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
